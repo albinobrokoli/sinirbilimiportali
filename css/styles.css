@@ -5,46 +5,15 @@ body {
     background-color: #f0f8ff;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #1e90ff;
-    padding: 1rem 0;
-}
-
 .logo {
     width: 100px;
     height: auto;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .hero {
     text-align: center;
     padding: 50px 0;
-}
-
-.news, .about, .articles, .forum {
-    padding: 20px;
+    background-color: #e6f7ff;
 }
 
 .news article, .articles article {
@@ -58,14 +27,15 @@ footer {
     padding: 1rem 0;
 }
 
-#chatbot-container {
-    margin: 20px 0;
+#content-area {
+    min-height: 300px;
+    background-color: #f9f9f9;
 }
 
-#comment-form {
-    margin-top: 20px;
-}
-
-#comments {
-    margin-top: 20px;
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+    cursor: move;
 }
