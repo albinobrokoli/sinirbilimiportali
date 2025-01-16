@@ -5,45 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nörobilim Eğitim Sitesi</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="img/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Anasayfa</a></li>
-                    <li><a href="about.html">Hakkımızda</a></li>
-                    <li><a href="articles.html">Makaleler</a></li>
-                    <li><a href="forum.html">Forum</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articles.html">Makaleler ve Araştırmalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="join.html">Bize Katılın</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Ara</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section class="hero">
-            <h1>Nörobilim Eğitim Sitesi</h1>
-            <p>Ücretsiz bilgiye kolay erişim sağlayarak nörobilim dünyasına hoş geldiniz.</p>
+            <div class="container text-center">
+                <h1>Nörobilim Eğitim Sitesi</h1>
+                <p>Ücretsiz bilgiye kolay erişim sağlayarak nörobilim dünyasına hoş geldiniz.</p>
+            </div>
         </section>
 
         <section class="news">
-            <h2>Son Gelişmeler</h2>
-            <article>
-                <h3>Yeni Nöropsikoloji Çalışması</h3>
-                <p>Yeni bir çalışma nöropsikoloji alanında önemli gelişmeler getirdi...</p>
-            </article>
-            <article>
-                <h3>Nörobilim ve AI Konferansı</h3>
-                <p>Gelecek ay yapılacak konferanstaki konuşmacılar açıklanıyor...</p>
-            </article>
+            <div class="container">
+                <h2>Son Gelişmeler</h2>
+                <article class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Yeni Nöropsikoloji Çalışması</h5>
+                        <p class="card-text">Yeni bir çalışma nöropsikoloji alanında önemli gelişmeler getirdi...</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nörobilim ve AI Konferansı</h5>
+                        <p class="card-text">Gelecek ay yapılacak konferanstaki konuşmacılar açıklanıyor...</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
+    <footer class="bg-light text-center text-lg-start">
+        <div class="text-center p-3">
+            <a class="text-dark" href="about.html">Hakkımızda</a> |
+            <a class="text-dark" href="projects.html">Projeler</a> |
+            <a class="text-dark" href="contact.html">İletişim</a> |
+            <a class="text-dark" href="faq.html">SSS</a> |
+            <a class="text-dark" href="#">Bizi Takip Edin</a> |
             <p>&copy; 2023 Nörobilim Eğitim Sitesi. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
